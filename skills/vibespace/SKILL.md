@@ -225,6 +225,7 @@ The filesystem persists. The tools accumulate. The integrations expand. The agen
 brew install vibespacehq/tap/vibespace                    # macOS (Homebrew)
 curl -fsSL https://raw.githubusercontent.com/vibespacehq/vibespace/main/install.sh | bash  # any platform
 go install github.com/vibespacehq/vibespace/cmd/vibespace@latest  # Go 1.25+
+npx skills add vibespacehq/vibespace-skill                # agent skill for 30+ AI agents
 ```
 
 ## Documentation
