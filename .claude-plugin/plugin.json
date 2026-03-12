@@ -1,0 +1,22 @@
+{
+  "name": "vibespace",
+  "version": "1.0.0",
+  "description": "Stateful runtime environments for AI agents with Kubernetes orchestration. Run Claude Code, Codex, or multiple agents collaborating on the same codebase — locally or on a remote server.",
+  "author": {
+    "name": "vibespacehq",
+    "url": "https://github.com/vibespacehq"
+  },
+  "homepage": "https://vibespace.build",
+  "repository": "https://github.com/vibespacehq/vibespace",
+  "license": "Apache-2.0",
+  "keywords": [
+    "multi-agent",
+    "ai-agents",
+    "development-environments",
+    "kubernetes",
+    "claude-code",
+    "codex",
+    "orchestration"
+  ],
+  "skills": "./skills/"
+}
