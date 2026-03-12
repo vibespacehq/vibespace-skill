@@ -7,11 +7,17 @@ description: Create and manage long-running, stateful AI agents with vibespace. 
 
 Stateful runtime environments for AI agents. Each agent gets a persistent Linux computer — its own filesystem, tools, network, and identity — orchestrated by Kubernetes on a local cluster or remote server.
 
-## Current state
+## How you should help
 
-!`vibespace status --json 2>/dev/null || echo '{"note": "vibespace not running or not installed"}'`
+When a user wants to set up a vibespace, **don't jump straight to `vibespace init`**. First understand what they need:
 
-!`vibespace list --json 2>/dev/null || echo '{"note": "no vibespaces"}'`
+1. **Ask about purpose**: What will this agent do? (coding, marketing, research, operations, data, writing, etc.)
+2. **Ask about identity**: What should the agent's personality and responsibilities be? This shapes the CLAUDE.md seed.
+3. **Determine resource needs**: A lightweight research agent needs less than a multi-agent coding cluster. Size accordingly.
+4. **Check current state**: Run `vibespace status --json` to see if a cluster is already running, and `vibespace list --json` to see existing vibespaces.
+5. **Set it up**: Init the cluster (if needed), create the vibespace, seed the agent's CLAUDE.md, and configure its model/tools/permissions based on purpose.
+
+The goal is a ready-to-go agent that already knows who it is and what it should do — not a blank container the user has to configure manually.
 
 ## The core idea
 
